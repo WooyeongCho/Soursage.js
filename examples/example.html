@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="example.json"></script> <!-- 색상 파일 -->
+    <script src="../soursage.js" charset="utf-8"></script> <!-- Soursage.js를 상위 폴더에서 불러옵니다. -->
+    <title></title>
+  </head>
+  <body>
+    <h1 id="s1"><span style="font-size: 20px">Replace 방식(rep)</span> Blue loves Red.. Red likes Blue!!</h1>
+    <h1 id="s2"><span style="font-size: 20px">단어 Replace 방식(wordrep)</span> Blue loves Red.. Red likes Blue!!</h1>
+
+    <code>json 파일 내용 : exampleColors = '{"Red" : "#ff0000", "Blue": "#0000ff", "loves": "#ff9400", "likes": "#ff9400"}'</code>
+    <br />
+    <br />
+    <code>html 내 script 내용 : var soursage = new Soursage(exampleColors); // Soursage 오브젝트를 생성합니다.
+
+    soursage.color(document.getElementById("s1"), "rep"); // s1 엘리먼트에 특정 단어마다 example.json에서 가져온 색을 입힙니다. rep 방식.
+
+    soursage.color(document.getElementById("s2"), "wordrep"); // s1 엘리먼트에 특정 단어마다 example.json에서 가져온 색을 입힙니다. wordrep 방식.</code>
+
+    <script type="text/javascript">
+      var soursage = new Soursage(exampleColors); // Soursage 오브젝트를 생성합니다.
+
+      soursage.color(document.getElementById("s1"), "rep"); // s1 엘리먼트에 특정 단어마다 example.json에서 가져온 색을 입힙니다. rep 방식.
+
+      soursage.color(document.getElementById("s2"), "wordrep"); // s1 엘리먼트에 특정 단어마다 example.json에서 가져온 색을 입힙니다. wordrep 방식.
+    </script>
+  </body>
+</html>
