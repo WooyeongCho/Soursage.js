@@ -1,9 +1,10 @@
 # Soursage.js
 ![rep](https://drive.google.com/uc?export=download&id=1xzXfsAatuFO_UITgFP27pKvdFCbMmod5 "rep")
 
-특정 단어만 색상을 적용켜주는 자바스크립트 라이브러리 입니다.
+특정 단어만 색상을 적용시켜주는 자바스크립트 라이브러리 입니다.
 
 예제 웹페이지 : <https://wooyeongcho.github.io/Soursage.js/docs/index.html>
+
 
 ## 사용하기
 Soursage.js를 사용하기 위해선 **html(필수)**, **json(필수)**, **js(선택** => html 파일 내 script 태그로 대체) 파일이 필요합니다.
