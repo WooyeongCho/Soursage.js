@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <script src="example.json"></script> <!-- 색상 파일 -->
-    <script src="soursage.js" charset="utf-8"></script> <!-- Soursage.js를 상위 폴더에서 불러옵니다. -->
+    <script src="../soursage.js" charset="utf-8"></script> <!-- Soursage.js를 불러옵니다. -->
     <title></title>
   </head>
   <body>
@@ -22,9 +22,9 @@
     <script type="text/javascript">
       var soursage = new Soursage(exampleColors); // Soursage 오브젝트를 생성합니다.
 
-      soursage.color(document.getElementById("s1"), "rep"); // s1 엘리먼트에 특정 단어마다 example.json에서 가져온 색을 입힙니다. rep 방식.
+      soursage.color(document.getElementById("s1"), "innerHTML", "rep"); // s1 엘리먼트에 특정 단어마다 example.json에서 가져온 색을 입힙니다. rep 방식.
 
-      soursage.color(document.getElementById("s2"), "wordrep"); // s1 엘리먼트에 특정 단어마다 example.json에서 가져온 색을 입힙니다. wordrep 방식.
+      soursage.color(document.getElementById("s2"), "innerHTML", "wordrep"); // s1 엘리먼트에 특정 단어마다 example.json에서 가져온 색을 입힙니다. wordrep 방식.
     </script>
   </body>
 </html>

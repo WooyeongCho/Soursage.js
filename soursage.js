@@ -3,17 +3,17 @@ class Soursage {
   constructor(jsonVarName) {
     this.jsonVarName = jsonVarName
   }
-  color(object, type) {
+  color(object, innerObject, type) {
 
     var data = JSON.parse(this.jsonVarName)
-
-    var objectSplit = object.innerHTML.split(" ")
+    var afObj = object[innerObject] // afObj 변수는 object[innerObject]를 줄여쓰지만, 변수 값은 object[innerObject]로 선언되므로 최종적으로 innerHTML 등을 수정될 땐 이 변수 값만 바뀜. 오직 값 가져오기 용도.
+    var objectSplit = afObj.split(" ")
     var result = [];
 
     var keys = []; // data의 모든 key[]
     for(var k in data) keys.push(k);
 
-    if(type == "wordrep")
+    if(type == "wordrep") {
       objectSplit.forEach(function(element) {
         if(data.hasOwnProperty(element)) {
           result.push(`<span style="color: ${data[element]}">${element}</span> `)
@@ -21,15 +21,16 @@ class Soursage {
           result.push(element + " ")
         }
 
+      })
       var joined = result.join("")
-      object.innerHTML = joined
-    })
+      object[innerObject] = joined
+    }
     else if(type == "rep") {
       keys.forEach(function(element) {
         var re = new RegExp(element, "gi");
         console.log("This is " + re)
-        console.log(object.innerHTML.replace(re, `<span style="color: ${data[element]}">${element}</span>`))
-        object.innerHTML = object.innerHTML.replace(re, `<span style="color: ${data[element]}">${element}</span>`)
+        console.log(afObj.replace(re, `<span style="color: ${data[element]}">${element}</span>`))
+        object[innerObject] = object[innerObject].replace(re, `<span style="color: ${data[element]}">${element}</span>`)
       })
     }
     else {
