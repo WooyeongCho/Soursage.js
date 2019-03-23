@@ -15,7 +15,7 @@ class Soursage {
 
     if(type == "wordrep")
       objectSplit.forEach(function(element) {
-        if(data.hasOwnProperty(element) || data.hasOwnProperty(element.startsOf)) {
+        if(data.hasOwnProperty(element)) {
           result.push(`<span style="color: ${data[element]}">${element}</span> `)
         } else {
           result.push(element + " ")
