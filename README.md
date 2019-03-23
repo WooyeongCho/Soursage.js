@@ -1,5 +1,6 @@
 # Soursage.js
-특정 단어만 색상을 적용시킵니다.
+![rep](https://drive.google.com/uc?export=download&id=1xzXfsAatuFO_UITgFP27pKvdFCbMmod5 "rep")
+위와 같이 특정 단어만 색상을 적용시킵니다.
 
 예제 웹페이지 : <https://wooyeongcho.github.io/Soursage.js/docs/index.html>
 
