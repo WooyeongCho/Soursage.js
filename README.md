@@ -48,7 +48,7 @@ html은 별반 다를 것 없습니다. 단, id로 구분을 잘해주셔야 됩
 ```json
 exampleColors = '{"Red" : "#ff0000", "Blue": "#0000ff", "loves": "#ff9400", "likes": "#ff9400"}'
 ```
-위와 같이 json 파일에 입력하면 exampleColors 변수에 json이 선언됩니다.
+위와 같이 json 파일에 입력하면 exampleColors 변수(꼭 exampleColors로 설정할 필요는 없습니다.)에 json이 선언됩니다.
 key 값은 문자열, value 값은 색상을 뜻합니다. (css에서 지원하는 색상도 가능합니다. red, yellow 등..)
 
 ### JS
