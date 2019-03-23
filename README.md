@@ -1,4 +1,6 @@
 # Soursage.js
+\[ 소세지 ]
+
 ![rep](https://drive.google.com/uc?export=download&id=1xzXfsAatuFO_UITgFP27pKvdFCbMmod5 "rep")
 
 특정 단어만 색상을 적용시켜주는 자바스크립트 라이브러리 입니다.
