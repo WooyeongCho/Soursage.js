@@ -3,8 +3,8 @@ class Soursage {
   constructor(jsonVarName) {
     this.jsonVarName = jsonVarName
   }
+  
   color(object, innerObject, type) {
-
     var data = JSON.parse(this.jsonVarName)
     var afObj = object[innerObject] // afObj 변수는 object[innerObject]를 줄여쓰지만, 변수 값은 object[innerObject]로 선언되므로 최종적으로 innerHTML 등을 수정될 땐 이 변수 값만 바뀜. 오직 값 가져오기 용도.
     var objectSplit = afObj.split(" ")
